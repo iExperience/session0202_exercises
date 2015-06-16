@@ -1,0 +1,10 @@
+x = 5
+string
+no, you need to add x.to_s
+YOLO
+Coolio
+error
+Batwoman
+Miley
+rapper[0]
+rapper[1..3]
