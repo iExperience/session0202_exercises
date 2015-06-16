@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<link href='http://fonts.googleapis.com/css?family=Englebert' rel='stylesheet' type='text/css'>
+
+<head>
+  <title>Emily Trojan</title>
+  <style>
+    h1 {
+      font-size: 95px;
+      margin: 90px 0 0 0;
+      text-align: center; 
+    }
+    .intro {
+      font-size: 30px;
+      line-height: 30px;
+      text-align: center; 
+    }
+    h2 {
+      font-size: 40px;
+      text-align: center;
+      padding: 20px 0px 0px 5px;
+    } 
+    .first {
+      background: rgba(255,80,70,.5)
+    }
+    .second {
+      background: rgba(255,80,70,.5)
+    }
+    .third {
+      background: rgba(255,80,70,.5)
+    }
+    .first p {
+      font-size: 25px; 
+      padding: 0px 0px 10px 25px; 
+    }
+    .second p {
+      font-size: 25px; 
+      padding: 0px 0px 10px 25px;
+    }
+    .third p {
+      font-size: 25px; 
+      padding: 0px 0px 10px 25px;
+    }
+    body {
+      text-align: center;
+      background: url("http://36.media.tumblr.com/f83cc67606b2721277cf0ef3e374145f/tumblr_n69amjLIJ11sl73dxo9_r1_500.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      font-family: 'Englebert', sans-serif;
+    }
+    @media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 30px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 25px;
+    line-height: 25px;
+    padding: 10px;
+    margin-bottom: 0px;
+  }
+  .intro {
+    font-size: 20px;
+  }
+  .first p {
+    font-size: 20px; 
+    line-height: 20px;
+    margin-top: 0px;
+}
+  .second p {
+    font-size: 20px; 
+    line-height: 20px;
+    margin-top: 0px;
+}
+  .third p {
+    font-size: 20px; 
+    line-height: 20px;
+    margin-top: 0px;
+}
+  </style>
+
+</head>
+
+<body>
+
+<h1>
+Emily Trojan
+</h1>
+
+<div class="intro">
+  <p>Student at the Univeristy of Virginia <br />Born and raised in LA</p>
+  <a href="http://imgur.com/oeTpAR3"><img src="http://i.imgur.com/oeTpAR3.jpg?1" title="source: imgur.com" /></a>
+</div>
+
+<div class="first">
+  <h2>
+  Why do I want to learn to code?
+  </h2> 
+  <p>
+  Because coding is the future. Plus, it's fun. 
+  </p>
+</div>
+
+<div class="second">
+  <h2>
+  What am I most excited about in South Africa?
+  </h2> 
+  <p>
+  I am most excited to be adventurous and explore Cape Town. 
+</div>
+
+<div class="third"> 
+  <h2>
+  What is one cool thing about me that others might not know?
+  </h2> 
+  <p>
+  I have already been to Africa twice. And love it. 
+  </p>
+  
+</body>
+
+</div> 
