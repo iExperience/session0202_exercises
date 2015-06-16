@@ -1,0 +1,18 @@
+body {
+  background-image: center;
+  background-image: url(http://www.zastavki.com/pictures/originals/2015/Cities_Cape_Town_South_Africa_095018_.jpg);
+  text-align: center;
+}
+h1 {
+  color: white;
+}
+h2 {
+  color: white;
+}
+p {
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  color: white;
+  font-size: 22px;
+}
