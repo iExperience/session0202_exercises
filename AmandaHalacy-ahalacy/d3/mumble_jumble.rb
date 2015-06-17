@@ -7,10 +7,12 @@
 
 # puts jumble("HI THERE I AM STILL HUNGRY")
 
-def mumble(sentence)
-	return sentence if sentence.empty?
+# def mumble(sentence)
+# 	return sentence if sentence.empty?
 
-	sentence.downcase
-end
+# 	sentence.downcase
+# end
 
-puts mumble("HOWZIT I AM HUNGRY hi")
+# puts mumble("HOWZIT I AM HUNGRY hi")
+
+
