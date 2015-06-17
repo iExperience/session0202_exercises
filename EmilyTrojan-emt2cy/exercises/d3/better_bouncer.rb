@@ -13,6 +13,3 @@ end
 
 bouncer(21,"USA")
 bouncer(15,"South Africa")
-
-def strict_bouncer(*data, letter)
-	if (*data
