@@ -2,7 +2,7 @@
 <head>
   <title>Josh Broomberg</title>
   <link href='https://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
-  <link href='stylesheets/style.css' rel='stylesheet' type='text/css'>
+
 <style>
 	body  {
   background:url(http://i.imgur.com/gBWMsVe.jpg) 
@@ -45,7 +45,7 @@ div{
 
 .outer {
   width: 1280px;
-  height: 960px;
+  height: 500px;
   margin:0 auto; 
   display: table-cell;    
   vertical-align: middle;
@@ -73,38 +73,53 @@ a:link{
    
 }
 a:hover{
-   background-color: white;
+
    text-decoration: none;
 }
+#nav_link:hover{
+   font-size: 58px;
+   text-decoration: none;
+}
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0,0,0,0.3);
+}
 
-</style></head>
+ul li {
+    display: inline;
+    float: center;
+    line-height: 35px;
+}
+li{
+	margin: 0px 100px;
+	font-size: 35px;
+   
+}
 
+</style>
+</head>
+
+<nav class="fixed-nav-bar">
+  <ul>
+  	<li>
+  		<a id="nav_link" href="http://localhost:9393/"> <span style="color:#FFFFFF">HOME<span></a>
+  	</li>
+  	<li>
+  		<a  id="nav_link" href="http://localhost:9393/about"> <span style="color:#FFFFFF">ABOUT<span></a>
+  	</li>
+  	<li>
+  		<a id="nav_link" href="http://localhost:9393/contact"> <span style="color:#FFFFFF">CONTACT<span></a>
+  	</li>
+  </ul>
+</nav>
 <div class="outer">
-<div class="inner1">
-<h1><b>JMB</b></h1>
-</div>
-</div>
-
-</br>
-
-<div class="outer">
-
-<div class="inner2">
-<img src="http://i.imgur.com/MsLw0CY.png?3">
-</div>
 <div class="inner2">
 <p><h2>
-----------------------------------------------------------------------
-</br>My name is Josh Broomberg. I am a student, an aspiring entrepreneur, and an avid coder.</br></br>While I will always be a 'joburger' at heart, I live in Cape Town and study at <a href="http://www.uct.ac.za/"> <span style="color:#EEEE00">UCT<span></a>. I'm currently in first year, doing a BSc majoring in CompSci, Economics and Math.</br></br>I love to code, in fact, I love all things tech, but I especially enjoy the problem solving involved with programming. If you're interested in my projects, have a look at my <a href="https://github.com/JoshBroomberg"><span style="color:#ffa500">GitHub<span></a>.</br></br>My other passion is debating. You can watch me and the rest of the<a href="https://www.facebook.com/TeamSA2014"><span style="color:#00ff00"> National Team<span></a> represent SA in the finals of WSDC <a href="https://vimeo.com/103587325"><span style="color:#1ab7ea">here<span></a>.</br></br>Keep scrolling to get in touch...</br>----------------------------------------------------------------------</br>
-</h2></p> 
-</div>
-</div>
-</br>
-<div class="outer">
-
-<div class="inner2">
-<p><h2>
-</br></br></br>
 ----------------------------------------------------------------------</br>
 If you know me, you should add me on  <a href="https://www.facebook.com/joshbroomberg"><span style="color:#3b5998">Facebook<span></a>, follow me on <a href="https://twitter.com/joshbroomberg"><span style="color:#4099ff">Twitter<span></a> or connect with me on <a href="https://www.linkedin.com/profile/view?id=426466441"><span style="color:#007bb6">LinkedIn<span></a>. If you need to reach me privately -  feel free to send me an <a href="mailto:joshbroomberg@gmail.com"><span style="color:#ff0000">email<span></a> or just use the box below and I'll contact you.</br></br>
 <form>
@@ -129,5 +144,3 @@ Very Helpful
 <h2>----------------------------------------------------------------------</h2>
 </div>
 </div>
-
-</body>
