@@ -2,13 +2,16 @@
 require "sinatra"
 
 get "/" do  
-	"This is the home page"	
+	#{}"This is the home page"
+	erb :personal_index	
 end
 
 get "/about" do 
-	"This is the about page"
+	#{}"This is the about page"
+	erb :about_index
 end
 
 get "/contact" do 
-	"This is the contact page"
+	#{}"This is the contact page"
+	erb :contact_index
 end
