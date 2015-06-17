@@ -1,5 +1,4 @@
-puts "What is your name?"
-name=gets.chomp
+require "pry"
 
 puts "How old are you?"
 age=gets.chomp
@@ -29,22 +28,21 @@ end
 puts "Bouncer: " + bouncer(age, country)
 puts
 
-name_and_age = [[name, age]]
+#Strict Bouncer code
+name_and_age = [["Annelie", 19], ["Ian", 24], ["Erica", 22]]
 letter = "i"
 
-puts "What are the names of all your friends?"
-
-#Strict Bouncer code
 def strict_bouncer(name_and_age, letter)
 	allowed = []
 	name_and_age.each do |person|
 		name = person[0]
-		if name[0] != letter && person[1].to_i >= 21
-			allowed.push(person[0])
+		if name[0].downcase != letter && person[1] >= 21
+			allowed.push(name)
 		end
 	end
+	p allowed
 end
 
-puts strict_bouncer(name_and_age, letter)
+strict_bouncer(name_and_age, letter)
 
 
