@@ -24,23 +24,28 @@ a:hover {
  * Base structure
  */
 
-html,
 body {
   height: 100%;
-  background-color: #333;
-}
+  background-color: black;
+  background: url("/me.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
 
+}
 body {
-  color: #fff;
+  color: ghostwhite;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
+
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: table;
   width: 100%;
-  height: 100%; /* For at least Firefox */
+  /*height: 100%;  For at least Firefox */
   min-height: 100%;
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
           box-shadow: inset 0 0 100px rgba(0,0,0,.5);
@@ -55,27 +60,20 @@ body {
   margin-left: auto;
 }
 
+
 /* Padding for spacing */
 .inner {
   padding: 30px;
 }
-
-
 /*
  * Header
  */
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 100px;
-  text-align: left;
-  
+  font-size: 200px;
+  text-align: left;  
 }
-img{
-  float: right;
-  border-radius: 10px;
-}
-
 
 .masthead-nav > li {
   display: inline-block;
@@ -83,9 +81,8 @@ img{
 
 .masthead-nav > li + li {
   margin-left: 20px;
- 
-}
-.masthead-nav > li > a {
+ }
+ .masthead-nav > li > a {
   padding-right: 0;
   padding-left: 0;
   font-size: 26px;
@@ -95,6 +92,7 @@ img{
   border-bottom: 2px solid transparent;
   padding-bottom: -10000px;
 }
+
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
   background-color: transparent;
@@ -106,24 +104,9 @@ img{
 .masthead-nav > .active > a:focus {
   color: #fff;
   border-bottom-color: #fff;
-  margin-top: 100px;
+  margin-top: 0px;
+  text-align: left;
 }
-h3{
-    position: fixed;
-    top: 0;
-}
-nav{
-   margin-top: 80px;
-}
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
-    float: right;
-  }
-}
-
 
 /*
  * Cover
@@ -134,66 +117,23 @@ nav{
 }
 
 .lead {
-  font-size: 30px;
+  font-size: 100px;
   margin-top: 30px;
   padding-top: 30px;
+  text-align: right;
+  margin-right: 200px;
 }
-
-.cover .btn-lg {
-  padding: 10px 20px;
-  font-weight: bold;
+p{
+  text-align: right;
+  font-size: 50px;
+  margin-right: 200px;
+  margin-left: 650px;
 }
-
-
-/*
- * Footer
- */
-
-.mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
-  padding-bottom:-10px;
-}
-.inner{
-  font-size: 15px;
-  margin-top: 10px;
+.down{
+  font-size: 20px; 
+  margin: 0 auto;
   text-align: center;
-  padding-bottom: -200px;
 }
-
-
-/*
- * Affix and center
- */
-
-@media (min-width: 768px) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
-    top: 0;
-  }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
-  /* Handle the widths */
-/*  .masthead,
-  .mastfoot,*/
-  .cover-container {
-    margin-bottom: -2000px;
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-    text-align: justify;
-  }
-}
-
-@media (min-width: 992px) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 700px;
-  }
+a {
+  color: black;
 }
