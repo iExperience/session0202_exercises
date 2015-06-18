@@ -1,0 +1,36 @@
+body {
+    margin: 0 auto;
+    max-width: 600px;
+    background : url("/home/praise/ixperience/github_day_1/session0202_exercises/PraiseNdebele-PraiseNdebele/projects/profile/images/images.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+    text-align: center;
+    color: white;
+    }
+div{
+	text-align: left;
+	}
+h1 {	 	
+	font-size: 70px;
+	font-family:'Creepster', cursive;
+	margin-bottom: 0px;
+	}
+h2{
+	}
+h3 {
+	font-size: 50px;
+	margin-bottom: 0px;
+	font-family: 'Handlee', cursive;
+	}
+p {	
+	font-size: 25px;
+	margin-top: 0px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	}
+img {
+    margin: 0px 0px 100px 0px;
+    border: 7px solid white;
+    border-radius: 200px;
+}

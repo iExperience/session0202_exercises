@@ -1,0 +1,12 @@
+body{
+	background-color: red;
+}
+
+img{
+	float: right;
+}
+
+li {
+	display: inline;
+	padding: 0px 20px 0px 0px;
+}
