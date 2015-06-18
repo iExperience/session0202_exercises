@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+   <Link rel="stylesheet" tyep="text/css" href="/Users/annelieherrmann/ixperience/projects/profile/stylesheets/style.css">
+  <title>Annelie Herrmann</title>
+</head>
+
+<body>
+  <img src="https://scontent-ord1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/10336700_815766895177759_2048472498683530994_n.jpg?oh=962e8d7a65013d5e679581499ca9ca9e&oe=55FC1F97" width=190 height=250>
+  <h1>Annelie Herrmann</h1>
+  <h2>Student at i_Xperience tech academy</h2>
+  <p>Hi! I'm Annelie, a sophomore at Harvard originally from the mitten state, Michigan.
+  <br>
+  I'm excited to learn to code because I believe it's a necessary skill to have in this day and age, and it seems like a blast!
+  <br>
+  In Cape Town (besides meeting all of you!), I'm most looking forward to hiking Table Mountain. I'd love some hiking buddies!
+  <br>
+  Fun Fact: Due to a childhood skiing accident, my left leg is 2 cm shorter than my right!
+  </p1>
+  <!--<input type="email" placeholder="Your email">
+  <input type="submit">
+  -->
+
+</body>
