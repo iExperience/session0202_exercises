@@ -1,0 +1,7 @@
+def calculate(x)
+	z=5
+	y = x * 5
+	x * 2
+end
+
+calculate 100
