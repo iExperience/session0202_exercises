@@ -1,6 +1,6 @@
 require "sinatra"
 
-get "/instructions" do 
+get "/" do 
 	erb :calc_index
 end
 
