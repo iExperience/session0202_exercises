@@ -1,28 +1,24 @@
 def index_of(string, letter)
-	complete = false
+	indice = -1
 	array = string.split('')
 	array.each_with_index do |element, index|
 		if element == letter
-			complete = true
-			puts index
-			index
+			indice = index
 			break;
 		end
 	end
-	if !complete
-		puts -1
-		-1
-	end
+	indice
 end
 
 def find_by_name (hashes, name)
+	chosen_one = nil
 	hashes.each do |element|
 		if element[:name] == name
-			puts element
-			element
+			chosen_one = element
 			break;
 		end
 	end
+	chosen_one
 end
 
 people = [
@@ -45,14 +41,16 @@ people = [
 ]
 
 def filter_by_name(hashes, name)
+	chosen_one = []
 	hashes.each do |element|
 		if element[:name] == name
-			puts element
-			element
+			chosen_one.push(element)
 		end
 	end
+	chosen_one
 end
 
-index_of("aardvark", "v")
-find_by_name(people, "brunette")
-filter_by_name(people, "ski")
+puts index_of("aardvark", "p")
+puts index_of("aardvark", "v")
+puts find_by_name(people, "brunette")
+puts filter_by_name(people, "ski")
