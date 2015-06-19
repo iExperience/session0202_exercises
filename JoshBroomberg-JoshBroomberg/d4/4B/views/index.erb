@@ -1,0 +1,30 @@
+<h1>Contact App</h1>
+<h4>Choose an option</h4>
+</br>
+<button id="all" onclick="window.location.href='/contacts'">View all contacts</button>
+</br>
+<button id="search" href="">View a specific contact</button>
+
+<script type="text/javascript">
+
+
+          window.onload = function() {
+          rdr = function(contact){
+          	
+
+          }
+          var a = document.getElementById("search");
+          a.onclick = function() {
+          	var contact = prompt("Please enter a contact", "Contact name");
+			if (contact != null) {
+  					//window.location.href= "localhost:9393/contacts/"+contact;
+  					window.location = "//localhost:9393/contacts/"+contact;
+				}
+          	
+          	//input("test");
+          }
+
+          
+
+        }
+    </script>

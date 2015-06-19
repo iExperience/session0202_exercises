@@ -9,6 +9,7 @@ get "/contact" do
 end
 
 get "/about" do 
+	#@section = section
 	erb :about
 end
 

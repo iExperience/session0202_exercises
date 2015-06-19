@@ -1,0 +1,20 @@
+
+<%if @contacts[@contact]!=nil%>
+
+<h1><%=@contact%></h1>
+
+<p>
+	Tel: <%=@contacts[@contact]%>
+	</br>
+	</br>
+	Picture:
+	</br>
+	<a href="http://thecatapi.com"><img src="http://thecatapi.com/api/images/get?format=src&type=gif"></a>
+</p>
+
+<button id="back" onclick="window.location.href='/'">Go back</button>
+
+<%else%>
+<h1>Error! contact not found</h1>
+
+<%end%>

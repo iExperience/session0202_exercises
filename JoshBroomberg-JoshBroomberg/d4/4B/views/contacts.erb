@@ -1,0 +1,17 @@
+
+
+<h1>All contacts:</h1>
+
+<h3>There are <%=@contacts.length%> contacts in your address book</h3>
+
+
+<p>
+<ul>
+<% @contacts.each do |contact|%>
+	<li><%=contact%></li>
+<%end%>
+</ul>
+<p>
+<p>
+	<button id="back" onclick="window.location.href='/'">Go back</button>
+</p>
