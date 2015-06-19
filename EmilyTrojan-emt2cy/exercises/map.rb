@@ -11,4 +11,4 @@ transformed_array = ["Google", "Bing", "Ask Jeeves"].map do |e|
   end
 end
 
-puts result
+p result
