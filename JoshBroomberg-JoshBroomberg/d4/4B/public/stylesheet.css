@@ -1,6 +1,9 @@
 body{
 	text-align: center;
 }
+thead{
+	text-align: center;
+}
 li{
 	
 }
@@ -16,3 +19,5 @@ a:visited{
 	text-decoration: none;
 	color: black;
 }
+
+

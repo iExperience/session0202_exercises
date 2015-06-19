@@ -6,15 +6,18 @@ end
 
 get "/contacts" do
 	
-    @contacts = ["Sammy", "Julian", "Daniel"]
+    @contacts = {"sammy"=>["luna","0836538932"],
+	 "julian"=>["churnik","0824146486"],
+	 "richard"=>["lin", "0825540747"]}
     erb :contacts
 
 end
 
 get "/contacts/:contact" do
-	@contacts = {"Sammy"=>"0836538932", "Julian"=>"0824146486", "Daniel"=>"0825540747"}
+	@contacts = {"sammy"=>["luna","0836538932"],
+	 "julian"=>["churnik","0824146486"],
+	 "richard"=>["lin", "0825540747"]}
 	@contact = params["contact"]
-	puts @contact
 	erb :contact
 end
 

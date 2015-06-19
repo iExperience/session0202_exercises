@@ -27,7 +27,6 @@ def filter_by_name arrToSearch, name
 		if element[:name]==name
 			element
 		end
-
 	end
 	arrToReturn.delete(nil)
 	arrToReturn
