@@ -1,0 +1,11 @@
+<!-- /views/contacts.erb -->
+<h1>Contacts list</h1>
+<p> Click on the name to see their full contact details</p>
+
+<ul>
+	<% @names.each do |name| %>
+		<li><a href = "/contacts/<%= name %>"><%= name %></a></li>
+	<%end %>
+</ul>
+
+<p><a href ="/">Home</a></p>
