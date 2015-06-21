@@ -1,5 +1,3 @@
-
-
 def jumble input
 	return input if input.empty?
 	input = input.split(//).shuffle.join
