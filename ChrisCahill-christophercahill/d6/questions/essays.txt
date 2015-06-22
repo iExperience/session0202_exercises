@@ -1,0 +1,29 @@
+1. Explain how a route leads to a controller and renders a view. 
+
+
+The collective routes determine which controller and action is used for every request. Different routes relate the requests to different controllers. Once there's a set controller/action, a template is rendered (a view). 
+
+Ex. request: DELETE /photos/17
+
+	example route: resources :photos
+
+If there's a request (the sample request), then it has to find a matching route. If the example route is there, then it dispatches the request appropriately (on the pertinent controller). 
+
+2. Explain the difference between a schema, a database, and a model (and give an example). 
+
+Schema are a way to organize data in a database. A model handles interactions 
+(with) in the database, and the database is where all the data is held. 
+
+Blog app today:
+
+All data (the articles) are on the database. The schema comes from 
+
+3. Explain the purpose of migration. 
+
+Migrations allow you to alter schema over time, changing the organization of the database.  
+
+
+Code Questions: 
+1. This firstly declares a new REST resource, which is added to config/routes.rb. From here, you can create, read, update and destroy information. 
+2. Rake routes looks for the Rakefile, which in this case is in Ruby. In our case, this shows all the routing (possible routes). This is helpful to see which routes are in existence (defined). 
+3. In Rails, you would still have the ERB files, which are the views files. The controller has the routes defined in it. The home page is in the routes.rb file (the index). 
