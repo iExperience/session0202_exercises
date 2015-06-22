@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Question</title>
+	<link href='/style2.css' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	
+</head>
+
+<body>
+<h1> Question 10 </h1>
+
+<h2><%= 'Johannesburg is also known as ...'%></h2>
+
+<% list = ["A", "B","C","D"] %>
+<% index = 0 %>
+
+
+<ul style="list-style: none; ">
+	<% @select.each do |option| %>
+		<% checker = list[index].to_sym %>
+		<li><a href ="10/<%= checker %>"><button><%= option[0]%></button></a> <%= option[1] %> </li>
+		<% index +=1 %>
+	<% end %> 
+</ul>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,36 @@
+body{
+	background: url("/sa.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+h1 {
+	font-size: 30px;
+	text-align: center;
+	margin-top: 200px;
+	margin-bottom: 0px;
+}
+h2 {
+	margin: 0px 450px  0px 400px;
+}
+h3 {
+	margin: 0px 450px  0px 400px;
+}
+ul {
+	margin: 0px 425px  0px 400px;
+	font-size: 25px;
+}
+
+.button{
+	text-align: center;
+	margin: 80px 510px  0px 520px;
+}
+.end{
+	margin: 0px 450px  0px 400px;
+	text-align: justify;
+	font-size:25px;
+}

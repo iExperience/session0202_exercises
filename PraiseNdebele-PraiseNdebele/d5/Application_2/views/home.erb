@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>QUIZ</title>
+	<link href='/style1.css' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<!-- <link href="/style.css" rel="stylesheet"> -->
+</head>
+
+	<body>
+	<h1> <%= "Quiz" %> </h1>
+	<h2> <%= "Let's see how much of South Africa you know so far..." %> </h2>
+	<h3> <%= "Instructions : " %>  </h3>
+
+	<% list  = ["You will answer this quiz as a class excluding {they know themselves!}", 
+		"There are 10 multiple choice questions each with only one correct answer.",
+		"There is no time limit.",
+		"You will get instant feedback after your choice of the correct answer.",
+		"Your score will not recorded ...",
+	] %>
+
+	<ol type = "1">
+		<% list.each do |instruction| %>
+			<li> <%= instruction%> </li>
+		<% end %>
+	</ol>
+
+	<h2 class="button"> <a href = "question/1"><button><%="Begin" %> </button></a> </h2>
+
+</body>
+
+
+</html>
