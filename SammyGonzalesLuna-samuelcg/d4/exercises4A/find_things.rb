@@ -17,6 +17,15 @@ def find_by_name (array_of_hashes, name)
 	end
 end
 
+def filter_by_name (array_of_hashes, name)
+	return_array = []
+	array_of_hashes.each do |hash|
+		if hash[:name] == name
+			return_array << hash
+		end
+	end
+end
+
 
 people = [
 	{
