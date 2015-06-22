@@ -1,0 +1,17 @@
+<h1>Create a hero</h1>
+
+<%= form_for @hero, url: heroes_path do |f| %>
+
+ <p>
+	<%=f.label :name%><br>
+	<%=f.text_field :name%>
+<br><br>
+	<%=f.label :power%><br>
+	<%=f.text_area :power%>
+	<br><br>
+
+	<%=f.submit%>
+	</p>
+<%end%>
+	
+
