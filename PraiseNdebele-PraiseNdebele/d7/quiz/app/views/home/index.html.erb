@@ -1,0 +1,20 @@
+<h1> Quiz </h1>
+<h2> Let's see how much of South Africa you know so far..."</h2>
+<h3> Instructions : </h3>
+
+<% list  = ["You will answer this quiz as a class.", 
+	"There are 10 multiple choice questions each with only one correct answer.",
+	"There is no time limit.",
+	"You will get instant feedback after your choice of the correct answer.",
+	"Your score will not recorded .",
+] %>
+
+<ol type = "1">
+	<% list.each do |instruction| %>
+		<li> <%= instruction%> </li>
+	<% end %>
+</ol>
+
+<button><%= link_to 'Start', number_path(:'1') %></button>
+
+<!-- <h2 class="button"> <a href = "questions/1"><button><%="Begin" %> </button></a> </h2> -->
