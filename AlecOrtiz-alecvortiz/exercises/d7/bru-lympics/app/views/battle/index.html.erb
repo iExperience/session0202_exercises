@@ -1,0 +1,9 @@
+<h1>Battle#index</h1>
+<p>Find me in app/views/battle/index.html.erb</p>
+
+<ul>
+<% @battles.each do |person_one, person_two, battle_type| %>
+	<li><% link_to battle, battle_path(:person_one => person_one, :person_two => person_two, :battle_type => battle_type) %> <li>
+	<% end %>
+	</li>
+</ul>
