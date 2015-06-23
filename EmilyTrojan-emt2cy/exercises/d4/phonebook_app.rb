@@ -10,8 +10,8 @@ get '/contacts' do
 end
 
 get '/contacts/:contact' do 
-	@contacts = {"Amanda" => "128374647383", "Julianne" => "48219394847", "Ian" => "29847455758"}
+	contacts = {"Amanda" => "128374647383", "Julianne" => "48219394847", "Ian" => "29847455758"}
 	@contact = params["contact"]
-	@number = @contacts[@contact]
+	@number = contacts[@contact]
 	erb :number
 end
