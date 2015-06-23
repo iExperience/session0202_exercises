@@ -1,0 +1,32 @@
+<style>
+    h1 {
+        text-align: center;
+        color: white;
+    }
+    body {
+        background: url(http://www.featurepics.com/FI/Thumb300/20130224/Brick-Wall-Background-2619933.jpg);
+        background-size: cover;
+        text-align: center;
+    }
+    ul {
+        list-style-type: none;
+    }
+    a {
+        color: white;
+    }
+</style>
+
+<h1>Our Favorite Cape Town Restaurants</h1>
+<ul>
+	<% @restaurants.each do |place| %>
+		<a href="/rest/<%= place %>"><li><%= place %></li></a>
+	<% end %>
+</ul>
+
+<a href="/about">About Us</a> | <a href="/home">Return Home</a> | <a href="https://www.uber.com/">Click for Uber.</a>
+<br/><img src="/images/girls7.jpg" style="height:350px; width: 500px;">
+
+</br><body>
+    <input type="email" placeholder="email to subscribe">
+    <input type="submit">
+</body>
