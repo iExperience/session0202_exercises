@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<head>
+  <title>Josh Broomberg</title>
+  <link href='https://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
+
+<style>
+	body  {
+  background:url(http://i.imgur.com/gBWMsVe.jpg) 
+  center no-repeat; 
+  background-attachment:fixed;
+  font-family: 'Gochi Hand', cursive;
+  text-align: center;
+  color: white;
+  
+  }
+  
+input {
+      border: 0;
+      padding: 10px;
+      font-size: 22px;
+      font-family: 'Gochi Hand', cursive;
+    }
+    input[type="submit"] {
+      background: red;
+      color: white;
+    }
+    input[type="submit"]:hover {
+      background: white;
+      color: red;
+    }
+  
+h1{
+  margin: 0;
+  font-color: red;
+  font-size: 25vh;
+
+  
+}
+h2{
+  font-size: 3.5vh;
+}
+div{
+  word-wrap: break-word;
+}
+
+.outer {
+  width: 1280px;
+  height: 500px;
+  margin:0 auto; 
+  display: table-cell;    
+  vertical-align: middle;
+  
+  
+}
+.inner1 {
+    display: block;
+    text-align: center;
+    width: 800px;
+    height: 400px;
+    margin: 0px auto;
+}
+
+.inner2 {
+    display: block;
+    text-align: center;
+    width: 800px;
+    height: 280px;
+    margin: 0px auto;
+}
+a:link{
+   /*font-style: italic;*/
+   text-decoration: none;
+   
+}
+a:hover{
+
+   text-decoration: none;
+}
+#nav_link:hover{
+   font-size: 58px;
+   text-decoration: none;
+}
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0,0,0,0.3);
+}
+
+ul li {
+    display: inline;
+    float: center;
+    line-height: 35px;
+}
+li{
+	margin: 0px 100px;
+	font-size: 35px;
+   
+}
+
+</style>
+</head>
+
+<nav class="fixed-nav-bar">
+  <ul>
+  	<li>
+  		<a id="nav_link" href="http://localhost:9393/"> <span style="color:#FFFFFF">HOME<span></a>
+  	</li>
+  	<li>
+  		<a  id="nav_link" href="http://localhost:9393/about"> <span style="color:#FFFFFF">ABOUT<span></a>
+  	</li>
+  	<li>
+  		<a id="nav_link" href="http://localhost:9393/contact"> <span style="color:#FFFFFF">CONTACT<span></a>
+  	</li>
+  </ul>
+</nav>
+<div class="outer">
+<div class="inner2">
+<p><h2>
+----------------------------------------------------------------------</br>
+If you know me, you should add me on  <a href="https://www.facebook.com/joshbroomberg"><span style="color:#3b5998">Facebook<span></a>, follow me on <a href="https://twitter.com/joshbroomberg"><span style="color:#4099ff">Twitter<span></a> or connect with me on <a href="https://www.linkedin.com/profile/view?id=426466441"><span style="color:#007bb6">LinkedIn<span></a>. If you need to reach me privately -  feel free to send me an <a href="mailto:joshbroomberg@gmail.com"><span style="color:#ff0000">email<span></a> or just use the box below and I'll contact you.</br></br>
+<form>
+<input type="email" placeholder= "youremail@mail.com">
+<input type="submit">
+</form>
+</br></br>
+Finally, take a second to tell me if you found this site helpful. Thanks in advance.
+<form>
+</h2></p> 
+Not helplful
+<input type="radio" name="rating" value="1">
+<input type="radio" name="rating" value="2">
+<input type="radio" name="rating" value="3" checked> 
+<input type="radio" name="rating" value="4">
+<input type="radio" name="rating" value="5">
+Very Helpful
+</br></br>
+<input type="submit">
+</form>
+</br>
+<h2>----------------------------------------------------------------------</h2>
+</div>
+</div>

@@ -1,0 +1,38 @@
+<h1>Contact App</h1>
+<h4>Choose an option</h4>
+</br>
+
+<button id="all" class="btn btn-danger" onclick="window.location.href='/contacts'">View all contacts &nbsp;&nbsp; <span class="glyphicon glyphicon-list" aria-hidden="true"></span></button>
+</br>
+</br>
+
+<button id="search" class="btn btn-primary" href="">Search for a specific contact &nbsp;&nbsp;<span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+
+
+
+<script type="text/javascript">
+
+
+          window.onload = function() {
+          rdr = function(contact){
+          	
+
+          }
+          var a = document.getElementById("search");
+          a.onclick = function() {
+          	var contact = prompt("Search for a contact (Try Sammy, Julian or Richard. Then try someone not on that list)", "First name", "test");
+			if (contact != null &&contact != "First name") {
+  					//window.location.href= "localhost:9393/contacts/"+contact;
+  					window.location = "//localhost:9393/contacts/"+contact.toLowerCase();
+				}
+				else{
+					alert("You must enter a first name");
+				}
+          	
+          	//input("test");
+          }
+
+          
+
+        }
+</script>

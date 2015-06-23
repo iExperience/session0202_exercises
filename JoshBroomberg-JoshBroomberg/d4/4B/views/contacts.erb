@@ -1,0 +1,36 @@
+
+
+
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><h1>All contacts:</h1></div>
+  <div class="panel-body">
+    There are <%=@contacts.length%> contacts in your address book
+  </div>
+  <table class="table table-striped">
+    <thead>
+        <tr>
+            <th align="center">First Name</th>
+            <th align="center">Last Name</th>
+            <th align="center">Number</th>
+        </tr>
+    </thead>
+    <tbody>
+    	<%@contacts.each_pair do |first, arr|%>
+        <tr>
+            <td><%=first.capitalize%></td>
+            <td><%=arr[0].capitalize%></td>
+            <td><%=arr[1]%></td>
+        </tr>
+        <%end%>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+<p>
+	<button id="back" class="btn btn-danger" onclick="window.location.href='/'">Go back</button>
+</p>
