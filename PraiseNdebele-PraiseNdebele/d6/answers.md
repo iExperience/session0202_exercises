@@ -1,4 +1,4 @@
-Conceptual questions
+#Conceptual questions
 
 - A given verb tells the http the kind of request made and looks for a controller which says how it must be done. This controller then directs to the views which does what was requested.
 
@@ -6,8 +6,30 @@ Conceptual questions
 
 - Data migration makes it possible to transfer data between storage types, formats, or computer systems.
 
-Code questions
+#Code questions
 
 - It would create a route with the url matcher ':sharks'
 
 - Rake routes allows one to see how all their routes lay out
+
+
+\# index.html.erb
+```sh 
+def index  \n
+end
+
+def index
+  @heroes = ["Batman", "Superman", "Rogue", "Wolverine"]
+end
+
+def index
+  heroes = {
+            "Batman" => "batarang",
+            "Superman" => "strength",
+            "Rogue" => "flying",
+            "Wolverine" => "claws"
+            }
+  @hero = params[:hero]
+  @superpower = heroes[@hero]
+end
+```
