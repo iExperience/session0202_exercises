@@ -1,6 +1,5 @@
 class QuestionsController < ApplicationController
 	def number
-
 		questions = {
 			'1' => 'Who is the President of South Africa?',
 			'2' => 'What is the national animal of South Africa?' ,
@@ -37,7 +36,7 @@ class QuestionsController < ApplicationController
 				["A", "  King Shaka International"],
 				["B", "  OR Tambo International"],
 				["C", "  Lanseria International"],
-				["D", " Cape Town International"],
+				["D", "  Cape Town International"],
 				],
 			'5' => [
 				["A", "  Table Mountain"],
