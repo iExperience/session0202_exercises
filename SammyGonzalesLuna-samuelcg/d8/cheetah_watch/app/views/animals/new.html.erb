@@ -1,0 +1,19 @@
+<h1>Create a new animal</h1>
+<%= form_for @animal do |f| %>
+  <div>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  
+  <div>
+    <%= f.label :region %><br>
+    <%= f.text_field :region %>
+  </div>
+
+  <div>
+    <%= f.label :life_expectancy %><br>
+    <%= f.text_field :life_expectancy %>
+  </div>
+  <br>
+  <%= f.submit %>
+<% end %>
