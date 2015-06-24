@@ -89,7 +89,7 @@ class QuestionsController < ApplicationController
 		@option = params[:option]
 		@next = (eval(@number + "+1").to_s)
 		@previous= (eval(@number + "-1").to_s)
-		@answers = ["A","D","C","B","D",
-"C","A","D","B","D"]
+		@answers = ["A","D","C","B","D","C","A","D","B","D"]
+		
 	end
 end
