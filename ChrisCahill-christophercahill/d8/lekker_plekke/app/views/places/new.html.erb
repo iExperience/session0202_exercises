@@ -1,0 +1,27 @@
+<%= form_for @place do |f| %>
+
+	<div>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  </div>
+
+  <div>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  </div>
+
+  <div>
+  <%= f.label :neighborhood%>
+  <%= f.text_field :neighborhood%>
+  </div>
+
+  <div>
+  <%= f.label :funness%>
+  <%= f.text_field :funness%>
+  </div>
+
+  <p><%= f.submit %></p>
+
+<% end %>
+
+<%= link_to 'Back', places_path %>
