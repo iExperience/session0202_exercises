@@ -3,23 +3,40 @@
 
 
 <style>
+
 body {
 	text-align: left;
 	font-family: 'Oswald', sans-serif;
 	font-size: 18px;
-	margin-left: 20px;
 	letter-spacing: 1px;
 }
+
 h1 {
 	font-family: 'Amatic SC', cursive;
-	font-size: 75px;
+	font-size: 78px;
 	margin-bottom: 5px;
 	margin-top: 0px;
+	margin-left: 4px;
+	letter-spacing: 6px;
+	border-bottom: 6px black solid;
 }
 
 ul {
 	margin-bottom: 20px;
+	margin-left: 2px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
+
+li {
+	padding: 5px 0px 0px 0px;
+	margin-left: 0px;
+}
+
+a {
+	margin-left: 2px;
+}
+
 a:link { color: #000000; text-decoration: none}
 a:visited { color: #000000; text-decoration: none}
 a:hover { color: #3366CC; text-decoration: underline}
@@ -37,5 +54,6 @@ List of Restaurants
 	<li><%= link_to restaurant, restaurant_path(:restaurant => restaurant) %></li>
 	<% end %>
 </ul>
+
 <a><%= link_to "| Back to Home |", root_path %></a>
 </body>
