@@ -87,5 +87,9 @@ class QuestionsController < ApplicationController
 		@number = params[:number].to_s
 		@index = (params[:number].to_s).to_i
 		@option = params[:option]
+		@next = (eval(@number + "+1").to_s)
+		@previous= (eval(@number + "-1").to_s)
+		@answers = ["A","D","C","B","D",
+"C","A","D","B","D"]
 	end
 end
