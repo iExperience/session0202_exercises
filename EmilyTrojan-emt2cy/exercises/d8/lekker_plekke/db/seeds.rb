@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+puts "Creating Places"
+
+Place.create! name: "Statue of Librity", location: "New York, New York"
+
+Place.create! name: "Eiffle Tower", location: "Paris, France"
+
+Place.create! name: "Golden Gate Bridge", location: "San Francisco, California" 
