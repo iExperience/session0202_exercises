@@ -1,0 +1,8 @@
+<h1> List of cuisines </h1>
+
+<ul>
+  <% @cuisines.each do |cuisine| %>
+    <li><%= link_to cuisine, cuisine_path(:cuisine => cuisine) %></li>
+  <% end %>
+</ul>
+
