@@ -1,0 +1,34 @@
+<style>
+    h1 {
+        text-align: center;
+        color: white;
+    }
+    body {
+    	background: url(http://www.featurepics.com/FI/Thumb300/20130224/Brick-Wall-Background-2619933.jpg);
+    	text-align: center;
+    }
+    ul {
+    	list-style-type: none;
+    	color: white;
+    }
+    a {
+    	color: white;
+    }
+</style>
+
+<h1>About Us...</h1>
+<ul>
+
+	<% @facts.each do |fact| %>
+		<li><%= fact %></li>
+	<% end %>
+</ul>
+
+<a href="/rest">Favorite CT Restaurants</a> | <a href="/home">Return Home</a> | <a href="https://www.uber.com/">Click for Uber.</a><br/><br/>
+
+<img src="images/girls1.jpg" style="height:300px; width: 300px;">
+<img src="images/girls2.jpg" style="height:300px; width: 300px;">
+<img src="images/girls3.jpg" style="height:300px; width: 300px;">
+<img src="images/girls4.jpg" style="height:300px; width: 300px;">
+<img src="images/girls5.jpg" style="height:300px; width: 300px;">
+<img src="images/girls6.jpg" style="height:300px; width: 300px;">

@@ -1,0 +1,6 @@
+greetings = ['hey', 'hi', 'hola', 'shalom', 'adios', 'bye']
+
+puts greetings.sort
+
+
+
