@@ -1,0 +1,36 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body{
+	background: url("/sa.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	font-family: 'Open Sans Condensed', sans-serif; 
+}
+
+
+h1 {
+	font-size: 150px;
+	text-align: center;
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+h2 {
+	margin: 0px 450px  0px 400px;
+	text-align: justify;
+}
+h3 {
+	margin: 0px 450px  0px 400px;
+}
+ol {
+	margin: 0px 425px  0px 400px;
+	font-size: 20px;
+}
+.button{
+	text-align: center;
+	margin: 80px 510px  0px 520px;
+}

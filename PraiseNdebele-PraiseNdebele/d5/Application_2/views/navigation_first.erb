@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Answer</title>
+	<link href='/style2.css' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	
+</head>
+
+<body>
+
+	<% answer = 'A' %>
+
+	<% if @option == answer %>
+		<h1><%= "Correct" %></h1>
+		<h2 class="button"><a href ="../2"><button><%="Next" %></button></a></h2>
+	<% else %>
+		<h1><%= "Incorrect" %></h1>
+		<h2 class="button"><a href ="../1"><button><%="Try again" %></button></a></h2>
+	<% end %>
+
+</body>
+
+
+</html>

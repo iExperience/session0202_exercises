@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Question</title>
+	<link href='/style2.css' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<!-- <link href="/style.css" rel="stylesheet"> -->
+</head>
+
+<body>
+<h1> Question <%= @number %> </h1>
+
+<h2> <%= @ask %> </h2>
+
+<% list = ["A", "B","C","D"] %>
+<% index = 0 %>
+<% number = @number.to_s %>
+<ul style="list-style: none; ">
+	<% @select.each do |option| %>
+		<% checker = list[index].to_sym %>
+		<li><a href ="<%= number %>/<%= checker %>"><button><%= option[0] %></button></a><%= option[1] %></li>
+		<% index +=1 %>
+	<% end %> 
+</ul>
+</body>
+
+</html>
+
+

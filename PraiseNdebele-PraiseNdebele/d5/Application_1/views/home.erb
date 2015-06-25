@@ -1,0 +1,60 @@
+
+<style>
+    body {
+      text-align: left;
+      background: url("http://i.imgur.com/dA9lwaH.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      font-family: helvetica;
+      font-size:40px
+    }
+    header {
+      text-align: center;
+      font-family: 'Gochi Hand', cursive;
+      font-size: 35px;
+      margin: -12px 0 0 0;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    div {
+      height: 200px
+      margin: 40px 0 -100px 0;
+      border-radius: 12px;
+    }
+    p {
+      color: rgba(255,255,255,1);
+      background: rgba(0,0,0,0.4);
+      border-radius: 20px;
+      padding: 50px;
+      line-height:28px;
+      text-align: justify;
+      bottom: 10px;
+      margin: 10px;
+      height: 20px;
+      transition: height 2s;
+    }
+  </style>
+
+
+<h1> <%= "Quiz : South Africa?" %> </h1>
+<h2> <%= "Let's see how much of South Africa you know so far..." %> </h2>
+<h3> <%= "Instructions : " %>  </h3>
+
+<% list  = ["You will answer this quiz as a class excluding {they know themselves!}", 
+	"There are 10 multiple choice questions each with only one correct answer.",
+	"There is no time limit.",
+	"You will get instant feedback after your choice of the correct answer.",
+] %>
+
+<ol type = "1">
+	<% list.each do |instruction| %>
+		<li> <%= instruction%> </li>
+	<% end %>
+</ol>
+
+<h2> <a href = "question/1"><%="Begin" %> </a> </h2>

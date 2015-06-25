@@ -1,0 +1,30 @@
+
+
+
+<% answer = 'D' %>
+
+<style>
+    body {
+      text-align: left;
+      background: url("http://i.imgur.com/DGJSi2I.jpg?1");
+      background-size: cover;
+      background-position: right;
+      background-color: gold;
+      color: red;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      font-family: helvetica;
+      font-size:100px
+
+    }
+</style>
+
+<% if @option == answer %>
+	<%= "Correct" %>
+	<h2><a href ="../../done"> <%="Done" %></a></h2>
+<% else %>
+	<%= "Incorrect" %>
+	<h2><a href ="../9"> <%="Try again" %></a></h2>
+<% end %>
+
+
+

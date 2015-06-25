@@ -1,0 +1,18 @@
+<% if @number == '10' %>
+	<% if @option == @answers[@index - 1] %>
+		<h1>Correct</h1>
+		<h2 class="button"><%= link_to "Done", root_path %> </h2>	
+	<% else %>
+		<h1>Incorrect</h1>
+		<h2 class="button"><%= link_to 'Try again', number_path(@number) %></h2>
+	<% end %>
+
+<% else %>
+	<% if @option == @answers[@index - 1] %>
+		<h1>Correct</h1>
+		<h2 class="button"><%= link_to 'Next', number_path(@next) %></h2>	
+	<% else %>
+		<h1>Incorrect</h1>
+		<h2 class="button"><%= link_to 'Try again', number_path(@number) %></h2>
+	<% end %>
+<% end %>

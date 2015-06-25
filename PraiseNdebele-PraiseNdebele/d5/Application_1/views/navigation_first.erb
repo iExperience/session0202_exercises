@@ -1,0 +1,65 @@
+
+
+<% answer = 'A' %>
+
+<style>
+    body {
+      text-align: left;
+      background: url("http://i.imgur.com/DGJSi2I.jpg?1");
+      background-size: cover;
+      background-position: right;
+      background-color: gold;
+      color: red;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      font-family: helvetica;
+      font-size:100px
+
+    }
+    header {
+      text-align: center;
+      font-family: 'Gochi Hand', cursive;
+      font-size: 35px;
+      margin: -12px 0 0 0;
+    }
+    h2 {
+      text-align: center;
+      font-family: 'Gochi Hand', cursive;
+      font-size: 20px;
+      margin: -60px 0 0 0;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    div {
+      height: 200px
+      margin: 40px 0 -100px 0;
+      border-radius: 12px;
+    }
+div.semi-transparent {
+  background: url('semi-transparent.png');
+}
+
+    p {
+      color: rgba(255,255,255,1);
+      background: rgba(0,0,0,0.4);
+      border-radius: 20px;
+      padding: 50px;
+      line-height:28px;
+      text-align: justify;
+      bottom: 10px;
+      margin: 10px;
+      height: 20px;
+      transition: height 2s;
+    }
+  </style>
+
+<% if @option == answer %>
+	<%= "Correct" %>
+	<h2><a href ="../2"> <%="Next" %></a></h2>
+<% else %>
+	<%= "Incorrect" %>
+	<h2><a href ="../1"> <%="Try again" %></a></h2>
+<% end %>
+

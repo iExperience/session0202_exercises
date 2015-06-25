@@ -1,0 +1,18 @@
+<%= form_for @place do |f| %>
+	<%= f.label :name %>
+	<div><%= f.text_field :name %></div> </br>
+
+	
+	<%= f.label :about %>
+	<div><%= f.text_field :about %></div> </br>
+
+	
+	<%= f.label :location %>
+	<div><%= f.text_field :location %></div> </br>
+
+	
+	<%= f.label :rating %>
+	<div><%= f.text_field :rating %></div> </br>
+
+	<%= f.submit %>	
+<% end %>
