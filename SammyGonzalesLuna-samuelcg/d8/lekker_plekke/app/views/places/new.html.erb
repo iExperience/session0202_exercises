@@ -1,0 +1,19 @@
+<h1>Create a new place</h1>
+<%= form_for @place do |f|  %>
+  <div>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+
+  <div>
+  <%= f.label :rating %><br>
+  <%= f.text_field :rating %> out of 5
+  </div>
+
+  <div>
+  <%= f.label :info %><br>
+  <%= f.text_area :info %>
+  </div>
+
+  <%= f.submit %>
+<% end %>
