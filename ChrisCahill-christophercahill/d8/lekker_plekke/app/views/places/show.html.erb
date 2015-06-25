@@ -9,6 +9,12 @@
 	<li>Funness: <%= @place.funness %></li>
 </ul>
 
+<h3>Comments</h3>
+<%= render @place.comments %>
+ 
+<h4>Add a comment:</h4>
+<%= render 'comments/form' %>
+
 <%= link_to 'Edit', edit_place_path(@place) %>
 <%= link_to 'Home', places_path %>
 
