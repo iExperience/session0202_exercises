@@ -1,0 +1,20 @@
+<h1>Cool places to visit in Cape Town!</h1>
+<table>
+  <tr>
+    <th>Place</th>
+    <th>Rating</th>
+  </tr>
+
+  
+  <% @places.each do |place| %>
+    <tr>
+      <td><%= place.name %></td>
+      <td><%= place.rating %> out of 5</td>
+      <td><%= link_to 'Show', place_path(place) %></td>
+    </tr>
+  <%end %>
+
+
+
+
+</table>
