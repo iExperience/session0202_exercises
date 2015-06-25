@@ -8,6 +8,8 @@
 
 puts "Creating places!"
 
+Place.delete_all
+
 Place.create! name: "Camps Bay", description: "text1", neighborhood: "lolidk", funness: "Fun and Trendy"
 
 Place.create! name: "Lion's Head", description: "text2", neighborhood: "lolidk1", funness: "Fun and Sporty"
