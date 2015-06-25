@@ -45,6 +45,6 @@ class AnimalsController < ApplicationController
   private
     def animal_params
       params.require(:animal).permit(:name, :region, 
-        :life_expectancy)
+        :life_expectancy, :conservation_status)
     end
 end

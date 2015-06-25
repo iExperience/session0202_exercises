@@ -19,3 +19,9 @@ Animal.create! name: "Flamingo", region: "Stellenbosch",
 Animal.create! name: "Shark", region: "Ocean", 
   life_expectancy: 1000000, conservation_status: "Endangered AF", 
   rideable: false
+
+puts "Creating shelters...."
+
+Shelter.delete_all
+
+Shelter.create! name: "Heaven", location: "above"

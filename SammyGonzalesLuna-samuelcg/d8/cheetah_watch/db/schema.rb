@@ -8,9 +8,10 @@
 # system, you should be using db:schema:load, not running all the migrations
 # from scratch. The latter is a flawed and unsustainable approach (the more migrations
 # you'll amass, the slower it'll run and the greater likelihood for issues).
+#
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150624081211) do
+ActiveRecord::Schema.define(version: 20150625133850) do
 
   create_table "animals", force: :cascade do |t|
     t.string   "name"
@@ -20,6 +21,15 @@ ActiveRecord::Schema.define(version: 20150624081211) do
     t.boolean  "rideable"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
+    t.integer  "shelter_id"
+  end
+
+  create_table "shelters", force: :cascade do |t|
+    t.string   "name"
+    t.string   "location"
+    t.string   "image_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
