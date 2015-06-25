@@ -1,7 +1,19 @@
 <h1>Cool Places!</h1>
 
-<ul>
+<table>
+	<tr>
+		<th>Name</th>
+		<th colspan='3'></th>
+	</tr>
+	
 <% @places.each do |place| %>
-	<li><%= link_to place.name, place_path(place) %></li>
-<%end %>
-</ul>
+	<tr>
+		<td><%= place.name %></td>
+		<td><%= link_to 'Show', place_path(place) %></td>
+		<td><%= link_to 'Edit', edit_place_path(place) %></td>
+		<td><%= link_to 'Destory', place_path(place),
+			method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+	</tr>
+<% end %>
+</table>
