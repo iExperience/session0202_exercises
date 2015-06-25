@@ -1,0 +1,6 @@
+<h1>Take a look at my contacts</h1>
+<ul>
+	<% @contacts.each do |contact| %>
+	<li><a href="/contacts/<%= contact %>"><%= contact %></a></li>
+	<% end %>
+</ul>
