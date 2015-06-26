@@ -1,0 +1,23 @@
+<h1> Cape Town Guide </h1>
+<h2><%= link_to "New Place", new_place_path %></h2>
+
+<table>
+  <tr>
+    <th>Check out these lekker plekke!</th>
+    <th></th>
+    <th colspan="3"></th>
+  </tr>
+ 
+  <% @places.each do |place| %>
+    <tr>
+      <td><%= place.name %></td>
+      <td><%= link_to 'Show', place_path(place) %></td>
+      <td><%= link_to 'Edit', edit_place_path(place) %></td>
+      <td><%= link_to 'Destroy', place_path(place),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
+
+<img src="http://www.jobmail.co.za/blog/wp-content/uploads/2015/05/Retail-Jobs-Cape-Town.jpeg" height="300" width="380">
