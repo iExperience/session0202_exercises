@@ -1,3 +1,4 @@
+<% if comment.commenter != '' || comment.text != '' %>
 <p>
   <strong>Commenter:</strong>
   <%= comment.commenter %>
@@ -7,9 +8,9 @@
   <strong>Comment:</strong>
   <%= comment.text %>
 </p>
-
 <p>
   <%= link_to 'Destroy Comment', [comment.place, comment],
                method: :delete,
                data: { confirm: 'Are you sure?' } %>
 </p>
+<% end %>

@@ -1,10 +1,14 @@
 class CommentsController < ApplicationController
-  http_basic_authenticate_with name: "dhh", password: "secret",
+  http_basic_authenticate_with name: "Sammy", password: "secret",
     only: [:destroy]
   def create
     @place = Place.find(params[:place_id])
-    @comment = @place.comments.create(comment_params)
-    redirect_to place_path(@place)
+    @comment = @place.comments.new(comment_params)
+    if @comment.save
+      redirect_to place_path(@place)
+    else
+      render 'places/show'
+    end
   end
 
   def destroy
