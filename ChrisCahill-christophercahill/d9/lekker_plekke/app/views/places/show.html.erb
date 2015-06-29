@@ -1,0 +1,20 @@
+<h1><%= @place.name %></h1>
+
+<h2> A few fun facts about this cool place... </h2>
+
+<ul>
+	<li>Name: <%= @place.name %></li>
+	<li>Description: <%= @place.description %></li>
+	<li>Neighborhood: <%= @place.neighborhood %></li>
+	<li>Funness: <%= @place.funness %></li>
+</ul>
+
+<h3>Comments</h3>
+<%= render @place.comments %>
+ 
+<h4>Add a comment:</h4>
+<%= render 'comments/form' %>
+
+<%= link_to 'Edit', edit_place_path(@place) %>
+<%= link_to 'Home', places_path %>
+
